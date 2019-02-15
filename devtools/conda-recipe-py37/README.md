@@ -12,7 +12,7 @@ conda install conda-build anaconda-client
 conda build . --no-anaconda-upload
 PACKAGE_OUTPUT=`conda build . --output`
 anaconda login
-anaconda upload --user uibcdf $PACKAGE_OUTPUT --label dev
+anaconda upload --user uibcdf $PACKAGE_OUTPUT
 conda build purge
 anaconda logout
 ```
@@ -20,7 +20,7 @@ anaconda logout
 ## Install
 
 ```
-conda install -c uibcdf/dev molmodmt
+conda install -c uibcdf chembl_webresource_client
 ```
 
 ## Additional Info
